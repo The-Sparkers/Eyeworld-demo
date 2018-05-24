@@ -1,0 +1,142 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Eye World Opticians | Home</title>
+    <link type="text/css" href="../Resources/css/style.css" rel="stylesheet" />
+    <link type="text/css" href="../Resources/css/w3-colors-metro.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="../Resources/css/w3-colors-flat.css" />
+    <link rel="stylesheet" href="../Resources/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../Resources/css/customCss.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!--Header-->
+    <div id="header" class="container-fluid headerContainer w3-flat-clouds">
+        <div class="row">
+            <div class="col-md-2 col-lg-2 col-sm-2col-xs-2">
+                <img src="../Resources/images/Shared/HeadLogo.png" class="img-circle" width="125" height="40" />
+            </div>
+            <div class="col-md-6">
+            </div>
+            <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2" id="addressBar" align="center">
+                <p class="headitems">Need Help?<br /><span class="glyphicon glyphicon-phone"></span>&nbsp;03074172327</p>
+            </div>
+            <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2 headitems" align="right">
+                <div id="loginBtn">
+                    <ul>
+                        <li>
+                            <a href="#" class="w3-flat-alizarin">My Account</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Menu & Logo-->
+    <div class="container-fluid menu">
+        <div class="row">
+            <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4">
+                <!--Logo-->
+                <table>
+                    <tr>
+                        <td class="w3-flat-belize-hole" id="logo"><font color="#FFFFFF" face="Comic Sans MS, cursive"><h2>Eye World</font></h2><h4 align="center">Opticians</h4></font></td>
+                    </tr>
+                </table>
+            </div>
+            <!--Menu-->
+            <div class=" col-lg-8 col-sm-8 col-xs-8 col-md-8">
+                <ul class="menuItems">
+                    <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span>(0)</a></li>
+                    <li><a href="Frames.html">Frames</a></li>
+                    <li><a href="Sunglasses.html">Sunglasses</a></li>
+                    <li><a href="home.html" class="menuActive">Home</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--Start of Body-->
+
+    @RenderBody();
+
+    <!--End of Body-->
+
+    <!--Footer-->
+    <!--Test-->
+    <div id="header" class="container-fluid headerContainer w3-metro-darken">
+        <div class="row">
+            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                <div class="container-fluid w3-metro-darken footer">
+                    <div class="row">
+                        <div class="col-md-4 col-xs-5">
+                            <p>&copy;2018 All Rights Reserved by: Eye World Opticians</p>
+                        </div>
+                        <div class="col-md-6 col-xs-1">
+                        </div>
+                        <div class="col-md-2 col-xs-4 footerItem">
+                            <p>
+                                <a href="#" title="Facebook"><span class="fa fa-facebook-square"></span></a>
+                                <a href="#" title="Twitter"><span class="fa fa-twitter-square"></span></a>
+                                <a href="#" title="Google"><span class="fa fa-google-plus-square"></span></a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row designedby">
+                        <div class="col-md-12">
+                            <p>Designed & Developed By: <a href="http://sparkers.tk" target="_blank">The Sparkers</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--Scripts-->
+    <script type="text/javascript" src="../Resources/scripts/hotItemsSlider.js"></script>
+    <script type="text/jscript" src="../Resources/scripts/jquery-3.3.1.js"></script>
+    <script type="text/jscript" src="../Resources/scripts/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../Resources/scripts/bootstrap.js"></script>
+    <script type="text/javascript" src="../Resources/scripts/npm.js"></script>
+    <script>
+	$(document).ready(function(e) {
+		//login Btn
+		$('#loginBtn').hover(function(e) {
+            $('#loginBtn #loginBtnItem').show();
+        });
+			//fixed header hide
+			$('.fixedHeader').hide();
+			//Header Scroll
+			$(document).scroll(function(e) {
+				if ($(window).scrollTop()>800) {
+				  $('.fixedHeader').show();
+				  $('.fixedHeader').addClass('w3-flat-clouds');
+				} else {
+				  $('.fixedHeader').hide();
+				  $('.fixedHeader').removeClass('w3-flat-clouds');
+				}
+            });
+			//Carousel
+            var myIndex = 0;
+			carousel();
+			function carousel() {
+    			var i;
+    			var x = document.getElementsByClassName("mySlides");
+    			for (i = 0; i < x.length; i++) {
+       				x[i].style.display = "none";
+    			}
+    			myIndex++;
+    			if (myIndex > x.length) {myIndex = 1}
+    			x[myIndex-1].style.display = "block";
+    			setTimeout(carousel, 9000);
+}
+        });
+    </script>
+</body>
+</html>
+

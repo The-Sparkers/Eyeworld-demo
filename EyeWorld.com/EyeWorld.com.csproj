@@ -89,14 +89,58 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\css\bootstrap.css" />
+    <Content Include="Resources\css\customCss.css" />
+    <Content Include="Resources\css\style.css" />
+    <Content Include="Resources\css\w3-colors-flat.css" />
+    <Content Include="Resources\css\w3-colors-metro.css" />
+    <Content Include="Resources\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Views\Frames.html" />
-    <Content Include="Views\Home.html" />
-    <Content Include="Views\Sunglasses.html" />
+    <Content Include="Resources\images\Frames\frame1.jpg" />
+    <Content Include="Resources\images\Frames\frame2.jpg" />
+    <Content Include="Resources\images\Frames\frame3.jpg" />
+    <Content Include="Resources\images\Frames\frame4.jpg" />
+    <Content Include="Resources\images\Frames\frame5.jpg" />
+    <Content Include="Resources\images\Frames\frame6.jpg" />
+    <Content Include="Resources\images\Frames\frame7.jpg" />
+    <Content Include="Resources\images\Frames\frame8.jpg" />
+    <Content Include="Resources\images\Frames\frame9.jpg" />
+    <Content Include="Resources\images\Home\Box-Optics-50-.jpg" />
+    <Content Include="Resources\images\Home\Box-Sunglasses-50+.jpg" />
+    <Content Include="Resources\images\Home\featuredFrame1.jpg" />
+    <Content Include="Resources\images\Home\featuredFrame2.jpg" />
+    <Content Include="Resources\images\Home\featuredFrame3.jpg" />
+    <Content Include="Resources\images\Home\featuredFrame4.jpg" />
+    <Content Include="Resources\images\Home\featuredSunglasses1.jpg" />
+    <Content Include="Resources\images\Home\featuredSunglasses2.jpg" />
+    <Content Include="Resources\images\Home\featuredSunglasses3.jpg" />
+    <Content Include="Resources\images\Home\featuredSunglasses4.jpg" />
+    <Content Include="Resources\images\Home\hotSeller1.jpg" />
+    <Content Include="Resources\images\Home\hotSeller2.jpg" />
+    <Content Include="Resources\images\Home\hotSeller3.jpg" />
+    <Content Include="Resources\images\Home\SliderImg1.jpg" />
+    <Content Include="Resources\images\Home\SliderImg2.jpg" />
+    <Content Include="Resources\images\Home\SliderImg3.jpg" />
+    <Content Include="Resources\images\Shared\HeadLogo.png" />
+    <Content Include="Resources\images\Sunglasses\sunglass1.jpg" />
+    <Content Include="Resources\images\Sunglasses\sunglass2.jpg" />
+    <Content Include="Resources\images\Sunglasses\sunglass3.jpg" />
+    <Content Include="Resources\images\Sunglasses\sunglass4.jpg" />
+    <Content Include="Resources\images\Sunglasses\sunglass5.jpg" />
+    <Content Include="Resources\images\Sunglasses\sunglass6.jpg" />
+    <Content Include="Resources\images\Sunglasses\sunglass7.jpg" />
+    <Content Include="Resources\images\Sunglasses\sunglass8.jpg" />
+    <Content Include="Resources\images\Sunglasses\sunglass9.jpg" />
+    <Content Include="Resources\scripts\bootstrap.js" />
+    <Content Include="Resources\scripts\hotItemsSlider.js" />
+    <Content Include="Resources\scripts\jquery-3.3.1.js" />
+    <Content Include="Resources\scripts\jquery-3.3.1.min.js" />
+    <Content Include="Resources\scripts\npm.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\IndexController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -105,6 +149,12 @@
   <ItemGroup>
     <Content Include="Views\web.config" />
     <Content Include="packages.config" />
+    <Content Include="Resources\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Resources\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Resources\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Resources\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Views\Shared\LayoutView.cshtml" />
+    <Content Include="Views\Index\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -114,12 +164,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
-    <Folder Include="css\" />
     <Folder Include="Models\" />
-    <Folder Include="Resources\fonts\" />
-    <Folder Include="Resources\images\" />
-    <Folder Include="scripts\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
